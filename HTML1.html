@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>HTML basics </title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link type="text/css" rel="stylesheet" href="assignment.css" media="screen and (min-width: 481px)" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	
+		<style>
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: red;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+		</style>
+	
+	</head>
+	<body>
+		
+		
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+		
+		
+					<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+			<a href="index.html" class="w3-bar-item w3-button w3-hover-green"> <i class="fa fa-home"></i> Home</a>
+			<a href="HTML1.html" class="w3-bar-item w3-button w3-hover-green">HTML-Tags, Images and Tables</a>
+			<a href="html2.html" class="w3-bar-item w3-button w3-hover-green">HTML-Creating Your First Webpage</a>
+			<a href="html3.html" class="w3-bar-item w3-button w3-hover-green">HTML-Validation/ File Organisation</a>
+			<a href="CSSpt1.html" class="w3-bar-item w3-button w3-hover-green">CSS-Common Styles/ Classes and Ids</a>
+			<a href="CSSpt2.html" class="w3-bar-item w3-button w3-hover-green">CSS-Divs and Spans</a>
+		    <a href="finalactiv.html" class="w3-bar-item w3-button w3-hover-green">Final Activity</a>
+			<a href="bibliography.html" class="w3-bar-item w3-button w3-hover-green">Bibliography</a>
+		</div>
+
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+
+		</div>
+
+		<script type="text/javascript">
+			function w3_open() {
+				document.getElementById("main").style.marginLeft = "110%";
+				document.getElementById("mySidebar").style.width = "25%";
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("openNav").style.display = 'none';
+			}
+			function w3_close() {
+				document.getElementById("main").style.marginLeft = "0%";
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("openNav").style.display = "inline-block";
+			}
+		</script>
+		<h1>Basic HTML Tags, Tables and Images</h1>
+		<h2>Basic Tags</h2>
+		<p>
+			Tags are essential in HTML as they indicate what your text is. For example, a paragraph indicated by &lt;p&gt;.
+		</p>
+		<h3>Head Tag</h3>
+		<p>The one of the most essential tags in HTML is the head tag. This display some of the most important information. But before this there must always be &lt;html&gt; tag. Without a &lt;html&gt; tag the html would never work. In the &lt;head&gt; tag you display the &lt;title&gt; tag. This is use to name the website and it displays in the top of the tab. A title tag would look like this:</p>
+		<div>&lt;Title&gt; Hello World &lt;/Title&gt;</div>
+		<h3>Headings</h3>
+		<p>Headings indicate… headings. The tag for heading is  Headings can go all the way to seven like this all in tags:</p>
+		<ul>
+		<li>&lt;h1&gt;</li>
+		<li>&lt;h2&gt;</li>
+		<li>&lt;h3&gt;</li>
+		<li>&lt;h4&gt;</li>
+		<li>&lt;h5&gt;</li>
+		<li>&lt;h6&gt;</li>
+		<li>&lt;h7&gt;</li>	
+		</ul>
+		<p>&lt;h1&gt; to indicate the title and &lt;h2&gt; to indicate subheading. Usually only &lt;h1&gt; and 2 are required, generally not &lt;h3&gt;, but it can be used.</p>
+		<h3>Paragraphs</h3>
+		<p>As previously mentioned paragraphs are indicated by</p>
+		<div>&lt;p&gt;</div>
+		<p>These are used for paragraphs</p>
+		<h3>Strong</h3>
+		<p>Strong tags put text in <strong>Bold</strong> and could be also be used in titles</p>
+		<div>&lt;strong&gt;</div>
+		<h3>Emphasis</h3>
+		<p>Emphasis but text in <em>italics</em> which could be used for quotes or anything</p>
+		<div>&lt;em&gt;</div>
+		<h2>Images</h2>
+		<p>The image tag is used for inserting images</p>
+		<div>
+			&lt;img alt="image name" src="images/image.jpeg"&lt;
+		</div>
+		<p>
+			The alt attribute is used to name the image it doesn’t have anything to do with making it work but it is required to pass validation which is discussed later on. src is required to link the image. If you use a website like Ed stem you can create folders and put documents inside. In this example in the folder called “images” contains an image called “image.jpeg” an to indicate a folder you put the folders name and a forward slash afterwords like this “images/” after the forward slash you put the images name along with what type of file it is. You can also put links in from the internet if you wish. 
+		</p>
+		<h2>Table</h2>
+		<p>
+			Tables can be used to display data in a website. The way to make a table in HTML is by using the table tag. Once you have done this you use the tag “tr” to indicate a table row. Inside of that tag you insert the tag “td” standing for table data. This is  the information you are trying to display. There are also the terms “colspan” and “rowspan.” rowspan tells the table how many rows a cell should take. Basically it expands a cell to take up more than one row.
+		</p>
+		<img alt="table" src="images/colspan table.png" width="500px"/>
+	
+		<div>
+			&lt;td rowspan="3"&gt;table data goes here&gt;/td&gt;
+		</div>
+		<p>
+			Colspan has the same idea except it expands the columns instead of the rows just as shown above. To use these attributes you would do what's displayed above. “Td colspan=”2” ” surrounded by tags is how it would look in the HTML file.
+		</p>
+		<div class="footer">
+			<p>
+Alex Cresswell, Darcy Gilbert 
+			</p>
+			<p>
+				2018 Term 2
+			</p>
+		</div>
+	</body>
+</html>

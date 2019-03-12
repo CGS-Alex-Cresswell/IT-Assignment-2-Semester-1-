@@ -1,0 +1,141 @@
+<!--
+// This project is submitted as part of the assessment for Year 9 IST.
+// This is all our own work. We have referenced any work used from other
+// sources and have not plagiarised the work of others.
+// (signed) Darcy Gilbert and Alexander Cresswell
+-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Assignment Term 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" type="text/css" href="assignment.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 20px;
+			}
+
+			#myBtn {
+				display: none;
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 99;
+				font-size: 18px;
+				border: none;
+				outline: red;
+				background-color: blue;
+				color: white;
+				cursor: pointer;
+				padding: 10px;
+				border-radius: 4px;
+			}
+
+			#myBtn:hover {
+				background-color: #555;
+			}
+		</style>
+
+	</head>
+	<body>
+
+
+
+
+
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+		<script>
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					document.getElementById("myBtn").style.display = "block";
+				} else {
+					document.getElementById("myBtn").style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		</script>
+
+
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+			<a href="index.html" class="w3-bar-item w3-button w3-hover-green"> <i class="fa fa-home"></i> Home</a>
+			<a href="HTML1.html" class="w3-bar-item w3-button w3-hover-green">HTML-Tags, Images and Tables</a>
+			<a href="html2.html" class="w3-bar-item w3-button w3-hover-green">HTML-Creating Your First Webpage</a>
+			<a href="html3.html" class="w3-bar-item w3-button w3-hover-green">HTML-Validation/ File Organisation</a>
+			<a href="CSSpt1.html" class="w3-bar-item w3-button w3-hover-green">CSS-Common Styles/ Classes and Ids</a>
+			<a href="CSSpt2.html" class="w3-bar-item w3-button w3-hover-green">CSS-Divs and Spans</a>
+			<a href="finalactiv.html" class="w3-bar-item w3-button w3-hover-green">Final Activity</a>
+			<a href="bibliography.html" class="w3-bar-item w3-button w3-hover-green">Bibliography</a>
+		</div>
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+		</div>
+		<script type="text/javascript">
+			function w3_open() {
+				document.getElementById("main").style.marginLeft = "110%";
+				document.getElementById("mySidebar").style.width = "25%";
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("openNav").style.display = 'none';
+			}
+			function w3_close() {
+				document.getElementById("main").style.marginLeft = "0%";
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("openNav").style.display = "inline-block";
+			}
+		</script>
+		<div class="bg"></div>
+
+		<div class="row">
+			<div class="column" style="background-color:#aaa;">
+				<h2 class="w3-center">The World Wide Web</h2>
+				<p>
+					The World Wide Web is the internet, what most people use daily. Web browsers are what people use to access the internet. Web servers is what stores the information for websites, and ect. When the browser is loading a page it requests a file that makes the website function, like <a class="link" href="HTML.html">HTML</a> and <a class="link" href="Learn CSS.html">CSS</a> files, the web server sends it back to the page and then the page loads. A Web Server is just a computer that is connect to the internet and the software installs that allows you to access web pages. A Web browser is what displays the information sent by the web browser. HTML tells the web browser what text to display. The WWW is Essential to the function of the internet     
+				</p>
+			</div> 
+			<div class="column" style="background-color:#bbb;">
+				<h2 class="w3-center"><a class="link" href="HTML1.html">HTML</a></h2>
+				<p>
+					Hypertext Markup Language or HTML is the website, how you put things into it like images or links, the paragraphs and headings. It tells the web browser about the content and structure of a website. HTML uses tags such as h1 to indicate a heading. &lt;p&gt; to indicate a paragraph and so on.  It is very important to close tags( &lt;/h1&gt;) as they do not work without close tags. Some programs such as ed stem automatically close tags. Html structures in the way that you write it on the document. The text goes from left to right automatically. The way to change this is through CSS. HTML is esstienal for websites and the internet to function.
+				</p>
+			</div>
+			<div class="column" style="background-color:#aaa;">
+				<h2 class="w3-center"><a class="link" href="CSSpt1.html">CSS</a></h2>
+				<p>
+					CSS or Cascading Style Sheets is a language used to describe and design the presentation and layout of a website.  CSS is written in markup language like HTML.  CSS works alongside HTML and Javascript to create the WWW.
+					CSS was made to enable color, layout and fonts.  This allows more flexibility and allows multiple webpages to share characteristics by writing the CSS into another .css file,  this reduces repetition and makes the job easier and faster without compromising quality
+				</p>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				Alex Cresswell, Darcy Gilbert 
+			</p>
+			<p>
+				2018 Term 2
+			</p>
+		</div>
+	</body>
+</html>

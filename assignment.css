@@ -1,0 +1,97 @@
+.link:link {
+    color: green; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+.link:visited {
+    color: teal;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.link:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.column {
+ float: left;
+ width: 33.33%;
+ margin: 0px;
+ padding: 1px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+	
+body, html {
+    height: 100%;
+}
+
+.bg { 
+    background-image: url("images/water.png");
+
+    height: 100%; 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer {
+  background-color: teal;
+  color:            #efe5d0;
+  text-align:       center;
+  padding:          15px;
+  margin:           0px;
+  font-size:        90%;
+}
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+
+
+h1 {
+ text-align: center;
+}
+
+img {
+	padding: 5px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+}
+
+
+
+

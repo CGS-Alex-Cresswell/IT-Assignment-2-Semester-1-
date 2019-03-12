@@ -1,0 +1,146 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Assignment Term 2</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" type="text/css" href="assignment.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+		
+		<style>
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: red;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+		</style>
+	
+	</head>
+	<body>
+		
+		
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+		
+		
+					<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+			<a href="index.html" class="w3-bar-item w3-button w3-hover-green"> <i class="fa fa-home"></i> Home</a>
+			<a href="HTML1.html" class="w3-bar-item w3-button w3-hover-green">HTML-Tags, Images and Tables</a>
+			<a href="html2.html" class="w3-bar-item w3-button w3-hover-green">HTML-Creating Your First Webpage</a>
+			<a href="html3.html" class="w3-bar-item w3-button w3-hover-green">HTML-Validation/ File Organisation</a>
+			<a href="CSSpt1.html" class="w3-bar-item w3-button w3-hover-green">CSS-Common Styles/ Classes and Ids</a>
+			<a href="CSSpt2.html" class="w3-bar-item w3-button w3-hover-green">CSS-Divs and Spans</a>
+		    <a href="finalactiv.html" class="w3-bar-item w3-button w3-hover-green">Final Activity</a>
+			<a href="bibliography.html" class="w3-bar-item w3-button w3-hover-green">Bibliography</a>
+		</div>
+
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+
+		</div>
+
+		<script type="text/javascript">
+			function w3_open() {
+				document.getElementById("main").style.marginLeft = "110%";
+				document.getElementById("mySidebar").style.width = "25%";
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("openNav").style.display = 'none';
+			}
+			function w3_close() {
+				document.getElementById("main").style.marginLeft = "0%";
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("openNav").style.display = "inline-block";
+			}
+		</script>
+		<h1>
+			CSS Divs and Spans!
+		</h1>
+		<p>
+			Div or (Division) enables the user to split the HTML content into small sections and enables each section to have its own formatting.
+		</p>
+		<p>
+			
+A section of Div Code may look like the code shown below.
+
+		</p>
+		<img alt="CSS Divs and Spans" src="images/short.png" width="300px"/>
+		<p>
+			And the HTML may look like this
+		</p>
+				<img alt="CSS Divs and Spans" src="images/large.png" width="450px"/>
+		<p>
+			And the content is displayed as 
+		</p>
+		<p>
+	<img alt="CSS Divs and Spans" src="images/green.png" width="400px"/>
+
+		</p>
+		<p>
+			
+Div and Span are similar but the difference is that Span goes is able to separate the content into a much finer level and we are able to single out a single character if the need arises, and there is no line feed after the "span" tag.
+
+		</p>
+		<p>
+			If we have the following CSS
+		</p>
+		<img alt="CSS Divs and Spans" src="images/short.png" width="350px"/>
+		<p>
+			And the following HTML
+		</p>
+		<img alt="CSS Divs and Spans" src="images/long.png" width="600px"/>
+		<p>
+			 The content will be displayed on the web page as 
+		</p>
+		<img alt="CSS Divs and Spans" src="images/f.png" width="400px"/>
+
+	</body>
+</html>

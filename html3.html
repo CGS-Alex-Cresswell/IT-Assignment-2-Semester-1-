@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>how to validate and organise your HTML files </title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<link type="text/css" rel="stylesheet" href="assignment.css"media="screen and (min-width: 481px)" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	
+	
+		<style>
+		body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: red;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+		</style>
+	
+	
+	</head>
+	<body>
+		
+		
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+		
+		<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+		
+		
+		<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+			<button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Close &times;</button>
+			<a href="index.html" class="w3-bar-item w3-button w3-hover-green"> <i class="fa fa-home"></i> Home</a>
+			<a href="HTML1.html" class="w3-bar-item w3-button w3-hover-green">HTML-Tags, Images and Tables</a>
+			<a href="html2.html" class="w3-bar-item w3-button w3-hover-green">HTML-Creating Your First Webpage</a>
+			<a href="html3.html" class="w3-bar-item w3-button w3-hover-green">HTML-Validation/ File Organisation</a>
+			<a href="CSSpt1.html" class="w3-bar-item w3-button w3-hover-green">CSS-Common Styles/ Classes and Ids</a>
+			<a href="CSSpt2.html" class="w3-bar-item w3-button w3-hover-green">CSS-Divs and Spans</a>
+			<a href="finalactiv.html" class="w3-bar-item w3-button w3-hover-green">Final Activity</a>
+			<a href="bibliography.html" class="w3-bar-item w3-button w3-hover-green">Bibliography</a>
+		</div>
+
+		<div id="main">
+
+			<div class="w3-teal">
+				<button id="openNav" class="w3-button teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+				<div class="w3-container">
+					<h1></h1>
+				</div>
+			</div>
+		</div>
+		<div class="w3-container">
+
+		</div>
+
+		<script type="text/javascript">
+			function w3_open() {
+				document.getElementById("main").style.marginLeft = "110%";
+				document.getElementById("mySidebar").style.width = "25%";
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("openNav").style.display = 'none';
+			}
+			function w3_close() {
+				document.getElementById("main").style.marginLeft = "0%";
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("openNav").style.display = "inline-block";
+			}
+		</script>
+		<h1>Validating Your HTML</h1>
+		<p>
+			Validation is the process where you check that your page validates as html5, which is the most modern type of html. But why should you validate? Validation teaches beginners what is right and wrong about their webpage because they have to fix mistakes themselves. It also just neat, nice and it's easy to navigate and access once its been validated. 
+			Follow this <a class="link" href="https://validator.w3.org/">link</a> for a good validation page. This page can also clean up your HTML, and loads of other features. To use it copy and paste your website link into the bar and it will tell you whats wrong!
+		</p>
+		<h2>
+			Multi-page websites
+		</h2>
+		<p>
+			Another important thing for a web page is using links. Links can be helpful for display information off of the main HTML page, like directions to your cafe for example. To do this you must create a seperate HTML Document with the information you would like to display. Then, on your main page on the word you would like to link, type  “ &lt;a src=“directions.html”&gt; the desired word to link &lt;/a&gt;. ” it will look like this 
+		</p>
+		<img alt="how to link image" src="images/how to do link.PNG">
+		<p>
+			 The circled Red word is the word that will be made the clickable link on the website like this 
+		</p>
+		<img alt="link" src="images/link.PNG">
+		<p>
+			Once you click it, you will be directed to the desired web page.
+		</p>
+		<h1>File Orangisation</h1>
+		<p>
+			As well as knowing HTML you must also have good file organisation on edstem. Folders are very helpful to store information, such as images, or files. To do this you click the folder icon in the top utility bar.
+		</p>
+		<img alt="workspace" src="images/workspace.jpg" width="700px" />
+		<p>
+			 You then name the folder what it is intended for.
+		</p>
+		<img alt="foldername" src="images/foldername.PNG" width="700px" />
+		<p>
+			Once the folder has been created you drag the file into the folder. 
+		</p>
+		<img alt="foldername" src="images/folder.PNG" width="700px" />
+		<p>
+			The way to deal with this and links is too put the folder name in front of it. For example
+		</p>
+		<div>
+			&lt;Img alt= “Image name here” href=”foldername/image.jpeg”/&gt;
+
+		</div>
+		<div class="footer">
+			<p>
+				Alex Cresswell, Darcy Gilbert 
+			</p>
+			<p>
+				2018 Term 2
+			</p>
+		</div>
+	</body>
+</html>
